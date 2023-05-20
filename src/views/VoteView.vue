@@ -108,7 +108,6 @@ export default {
     }
   },
   created() {
-    console.log('mounted');
     this.user.name = localStorage.getItem('username');
     this.userDetail();
   },
