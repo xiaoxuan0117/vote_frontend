@@ -90,6 +90,7 @@ export default {
 button.submit {
   width: 67px;
   height: 30px;
+  color:#416586;
   background-color: #fff;
   border-radius: 5px;
   border: none;

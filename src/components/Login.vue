@@ -41,6 +41,7 @@ export default {
           }
         })
         if(status === 200) {
+          localStorage.setItem('username', username);
           this.$router.push('/vote');
         } else {
           alert('輸入內容錯誤，請重新輸入');
