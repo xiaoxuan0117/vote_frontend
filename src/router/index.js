@@ -13,6 +13,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "vote" */ "../views/VoteView.vue"),
   },
+  {
+    path: "/manage",
+    name: "manage",
+    component: () =>
+      import(/* webpackChunkName: "manage" */ "../views/ManageView.vue"),
+  },
 ];
 
 const router = createRouter({
