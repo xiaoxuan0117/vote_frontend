@@ -132,6 +132,10 @@ export default {
   & .content {
     width: 40%;
     text-align: start;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 }
 .title {

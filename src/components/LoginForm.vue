@@ -61,9 +61,15 @@ export default {
 
 .form {
   display: flex;
+  flex-flow: wrap;
   flex-direction: row;
   align-items: flex-end;
   gap: 24px;
+
+  @media screen and (max-width: 768px) {
+  flex-direction: column;
+  align-items: flex-start;
+  }
 }
 
 .input-wrapper {
