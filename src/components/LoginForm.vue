@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import { validateInput } from  '@/utils/index.js';
 export default {
   name: 'UserLogin',
   props: {
@@ -33,11 +34,12 @@ export default {
   methods: {
     login() {
       const { username, password } = this;
-      const validPattern = /[/w]*/;
-      if(!validPattern.test(username) || !validPattern.test(password)) {
+      console.log('into');
+      if(!validateInput(username, "string") || !validateInput(password, "string")) {
         alert('輸入格式錯誤，請重新輸入');
         return;
       }
+      console.log('pass');
       this.$emit('login', { username: this.username, password: this.password });
     }
   }
